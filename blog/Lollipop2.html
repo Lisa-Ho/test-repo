@@ -30,6 +30,12 @@
         - https://d3-graph-gallery.com/graph/custom_legend.html
         */
 
+        // Projects\test-repo\blog --> ..
+         // Projects\test-repo
+        // Projects\test-repo\data
+
+        const dataSetOne = d3.csv("../data/MakeoverMonday_New_Years_Resolutions.csv");
+
         // set the dimensions and margins of the graph
         const margin = {top: 120, right: 30, bottom: 70, left: 280},
             width = 900 - margin.left - margin.right,
@@ -47,7 +53,7 @@
                 
 
         // Parse the Data
-        d3.csv("MakeoverMonday_New_Years_Resolutions.csv").then(function(data) {
+        d3.csv("../data/MakeoverMonday_New_Years_Resolutions.csv").then(function(data) {
             console.log(data)
 
             // Add X axis
